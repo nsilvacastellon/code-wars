@@ -6,3 +6,16 @@ function squareNumSum(numbers) {
   return numbers.reduce( (acc, c) => acc + (c * c), 0);
 };
 
+/*
+
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+*/
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+  }
+  console.log(reverseString("world war"));
