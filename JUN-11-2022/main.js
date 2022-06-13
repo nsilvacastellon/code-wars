@@ -10,12 +10,8 @@ None of the arrays will be empty, so you don't have to worry about that!
 */
 
 function removeEveryOther(arr){
-    return arr.map((element, index) => {
-      if(index === 1 || index % 2 !== 0) {
-        return 0
-      } 
-      return element;
-    });
-  }
-  
-  console.log(removeEveryOther(["keep", "remove", "keep", "remove", "keep", "remove"]));
+  return arr.filter((element, index) => index % 2 === 0);
+}
+
+// console.log(removeEveryOther(["keep", "remove", "keep", "remove", "keep", "remove", "keep", 
+// "remove", "keep", "remove", "keep", "remove"]));
