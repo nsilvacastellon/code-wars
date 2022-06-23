@@ -13,3 +13,4 @@ function removeExclamationMarks(s) {
   - filter(element => element != "!") -- Loops inside all array elements(characters) and filter to a new array all elements
   that pass the condition(all characters except "!").
   - join("") -- Converts the array into a string again.
+  */
